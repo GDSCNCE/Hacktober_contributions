@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>C CALCI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to left, rgb(94, 238, 238), rgb(94, 238, 238));
+        }
+
+        .container {
+            display: inline-block;
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            height: 400px;
+            width: 300px;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.455), rgba(255, 255, 255, 0.455));
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 5px rgba(141, 141, 141, 0.484);
+        }
+
+        form {
+            height: 390px;
+        }
+
+        .form-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            padding: 10px;
+        }
+
+        #display {
+            align-self: center;
+            padding: 10px;
+            border: none;
+            width: 98%;
+            height: 20%;
+            border-radius: 5px;
+            margin-top: 2px;
+        }
+
+        .row1,
+        .row2,
+        .row3,
+        .row4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+            height: 20%;
+        }
+
+        .button {
+            width: 20%;
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            height: 45px;
+            align-self: center;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.359);
+            cursor: pointer;
+            height: 45px;
+            align-self: center;
+            border-radius: 10px;
+        }
+
+        .button:active {
+            font-size: 23px;
+        }
+
+        .clearbutton {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="cal-box">
+            <form name="calculator">
+                <div class="form-box">
+                    <input id="display" name="display" type="text" placeholder="0" readonly>
+
+                    <div class="row1">
+                        <input type="button" class="button" value="7" onclick="calculator.display.value +='7'">
+                        <input type="button" class="button" value="8" onclick="calculator.display.value +='8'">
+                        <input type="button" class="button" value="9" onclick="calculator.display.value +='9'">
+                        <input type="button" class="button mathsbuttons" value="+"
+                            onclick="calculator.display.value +='+'">
+                    </div>
+                    <div class="row2">
+                        <input type="button" class="button" value="4" onclick="calculator.display.value +='4'">
+                        <input type="button" class="button" value="5" onclick="calculator.display.value +='5'">
+                        <input type="button" class="button" value="6" onclick="calculator.display.value +='6'">
+                        <input type="button" class="button mathsbuttons" value="-"
+                            onclick="calculator.display.value +='-'">
+                    </div>
+                    <div class="row3">
+                        <input type="button" class="button" value="1" onclick="calculator.display.value +='1'">
+                        <input type="button" class="button" value="2" onclick="calculator.display.value +='2'">
+                        <input type="button" class="button" value="3" onclick="calculator.display.value +='3'">
+                        <input type="button" class="button mathsbuttons" value="x"
+                            onclick="calculator.display.value +='*'">
+                    </div>
+                    <div class="row4">
+                        <input type="button" class="button clearbutton" value="C"
+                            onclick="calculator.display.value =''">
+                        <input type="button" class="button" value="0" onclick="calculator.display.value +='0'">
+                        <input type="button" class="button mathsbuttons" value="="
+                            onclick="calculator.display.value =eval(calculator.display.value)">
+                        <input type="button" class="button mathsbuttons" value="/"
+                            onclick="calculator.display.value +='/'">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
