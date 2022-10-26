@@ -1,0 +1,13 @@
+#include<studio.h>
+int main()
+{
+int x,y=0 ,r;
+printf("Enter a number");
+Scanf("%d",&x);
+While(x!=0) {
+r=x%10;
+y=y*10+r;
+x=x/10;
+}
+printf("Reverse is %d" ,y);
+}
