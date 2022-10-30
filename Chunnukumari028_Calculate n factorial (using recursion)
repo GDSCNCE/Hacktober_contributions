@@ -1,0 +1,19 @@
+#include<stdio.h>
+// Function to print factorial of n
+Int factorial(int n) ;
+
+Int main () {
+Int n;
+Printf("enter n : ");
+Scanf("%d", &n);
+Printf("factorial is : % d", factorial (n));
+return 0;
+}
+int factorial (int n) {
+if (n = = 0){
+return 1 ;
+}
+ int factnml = factorial ( n-1);
+ int factn = factnml * n ;
+return factn;
+}
