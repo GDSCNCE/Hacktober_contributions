@@ -1,0 +1,28 @@
+#include <stdio.h>
+void swap(int a, int b);
+Void _swap(int* a, int* b);
+
+Int main(){
+  int x = 3, y = 5 ;
+
+// Call by value
+Swap ( x, y)
+Printf("x = %d & y = %d\n", x, y);
+
+// Call by reference 
+_swap(& x, & y);
+Printf("x = %d & y = %d\n", x, y);
+return 0;
+}
+
+void swap (int a, int b){
+ int t = a ;
+  a = b;
+  b = a;
+}
+
+void _swap ( int* a, int* b){
+ int t = * a;
+  *a = * b;
+  *b = * b;
+}
