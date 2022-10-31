@@ -1,0 +1,58 @@
+#include<stdio.h>
+main()
+{
+	int x[3][3],y[3][3],z[3][3],i,j,k,sum=0;
+	printf("Enter the 1st array elements:-\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&x[i][j]);
+		}
+	}
+	printf("\n1st array elements are:-\n");
+	for(i=0;i<3;i++)
+	{
+		printf("\n");
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",x[i][j]);
+		}
+	}
+	printf("\nEnter the 2nd array elements:-\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&y[i][j]);
+		}
+	}
+	printf("\n2nd array elements are:-\n");
+	for(i=0;i<3;i++)
+	{
+		printf("\n");
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",y[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			for(k=0;k<3;k++)
+			sum=sum+x[i][k]*y[k][j];
+			z[i][j]=sum;
+			sum=0;
+		}
+	}
+	printf("\nAfter multiplication the matrix is:\n");
+	for(i=0;i<3;i++)
+	{
+		printf("\n");
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",z[i][j]);
+		}
+	}
+}
