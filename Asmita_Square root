@@ -1,0 +1,13 @@
+#include <stdio.h> 
+void main() 
+{ 
+val=9; 
+if (val == 0 || val == 1) printf("The square root is %d", val) ; 
+exit() ; 
+int counter = 1, sqroot=1, output; 
+while (sqroot <= val) 
+{ 
+counter++; sqroot = counter*counter; 
+} 
+output= counter - 1; printf("The square root is %d", output) ; 
+}
