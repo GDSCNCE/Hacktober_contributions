@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h> 
+int main() 
+{ 
+char string_1[50] = "Programming"; 
+char string_2[ ] = "Language"; 
+int i, j, a,b; 
+a = strlen(string_1); 
+b = strlen(string_2); 
+j = 0; 
+for(i = a; i< a+b; i++ ) 
+{ 
+string_1[i] = string_2[j]; 
+j++; 
+}  
+string_1[i] = '\0'; printf("%s", string_1); return 0; 
+}
