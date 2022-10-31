@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> List of Participants </title>
+</head>
+<h3> List of Participants </h3>
+<hr>
+<ol>
+<li> Seeta </li>
+<ul > 
+<li> Dance </li>
+<li> Song </li>
+</ul>
+</ol>
+<ol>
+<li> Rajan </li>
+<ul>
+<li> Song </li>
+<li> Speech </li>
+<li> Drama </li>
+</ul>
+</ol>
+<ol>
+<li> Geet </li>
+<ul>
+<li> Song </li>
+<li> Drama </li>
+</ul>
+</ol>
+</html>
