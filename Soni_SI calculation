@@ -1,0 +1,19 @@
+// without prototype
+#include<stdio.h>
+int SimpleIntrest(int P,int R ,int T)
+{
+	return(P*R*T);
+}
+main()
+{
+	printf("I am in main function\n");
+	int P,R,T,SI;
+	printf("Principal:");
+	scanf("%d",&P);
+	printf("Rate of intrest:");
+	scanf("%d",&R);
+	printf("Time:");
+	scanf("%d",&T);
+	SI=SimpleIntrest(P,R,T);
+	printf("Simple intrest=%d",SI);
+}
