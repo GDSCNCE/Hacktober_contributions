@@ -1,0 +1,18 @@
+#include<stdio.h>
+// without prototype
+int power(int b,int exp)
+{
+	return(val);
+}
+main()
+{
+	int b,exp,pow,val;
+	printf("Enter the values of base and exponent:\n");
+	scanf("%d%d",&b,&exp);
+	pow=power(b,exp);
+	for(int i=0;i<exp;i++)
+	{
+		val=val*b;
+	}
+	printf("The value of %d to the power %d is=%d",b,exp,val);
+}
