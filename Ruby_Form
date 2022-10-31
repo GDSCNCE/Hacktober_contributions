@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration form </title>
+</head>
+<br>
+<form>
+<label> Name:</label>
+<input type="text" placeholder="Enter your name here">
+<br>
+<br>
+<label> Date of Birth: </label>
+<input type="text" placeholder="Enter your D.O.B. here">
+<br>
+<br>
+<label> Contact no.: </label>
+<input type="text" placeholder="123...">
+<br>
+<br>
+<label> Class: </label>
+<input type="radio" name="Class"> Class 11 
+<input type="radio" name="Class"> Class 12
+<br>
+<br>
+<label> Select your Subjects: </label>
+<br>
+<input type="checkbox" name="subject"> Chemistry
+<br>
+<input type="checkbox" name="subject"> Physics
+<br>
+<input type="checkbox" name="subject"> Maths
+<br>
+<input type="checkbox" name="subject"> English
+<br>
+<input type="checkbox" name="subject"> Hindi
+<br>
+<input type="checkbox" name="subject"> Social Science
+<br>
+<br><br>
+<input type="Submit" value="submit">
+
+</form>
+</html>
