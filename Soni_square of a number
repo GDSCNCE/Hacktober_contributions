@@ -1,0 +1,15 @@
+#include<stdio.h>
+// without prototype
+int square(int a)
+{
+	return(a*a);
+}
+main()
+{
+	printf("I am in main function\n");
+	int b,squ;
+	printf("Enter the value of function:");
+	scanf("%d",&b);
+	squ=square(b);
+	printf("Square=%d",squ);
+}
