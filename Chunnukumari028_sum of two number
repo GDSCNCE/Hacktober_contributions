@@ -1,0 +1,10 @@
+#include<stdio.h>
+Int main(),{
+Int a, b;
+Printf("enter a \n");
+Scanf("%d", &a);
+Printf("enter b \n");
+Scanf("%d", &b);
+Printf("sum of a & b is : %d \n", a+b);
+return 0;
+}
